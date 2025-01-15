@@ -1,16 +1,11 @@
-'use client'
+/* eslint-disable @typescript-eslint/no-unused-vars */
 
-import { Component, ErrorInfo, ReactNode } from 'react'
+import React from 'react';
 
-interface Props {
-  children?: ReactNode
-}
+interface Props {}
+interface State {}
 
-interface State {
-  hasError: boolean
-}
-
-class ErrorBoundary extends Component {
+class ErrorBoundary extends React.Component<Props, State> {
   state = { hasError: false };
 
   static getDerivedStateFromError(error: Error) {
