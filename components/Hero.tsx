@@ -1,10 +1,10 @@
 "use client"
 
-import { motion } from 'framer-motion'
+import { motion, AnimationProps } from 'framer-motion'
 import { TypeAnimation } from 'react-type-animation'
 import { Code2, Database, Brain, BarChartIcon as ChartBar, Cloud, Server, Cpu, LineChart } from 'lucide-react'
 
-const randomBlink = () => ({
+const randomBlink = (): AnimationProps['animate'] => ({
   opacity: [0.2, 0.5, 0.2],
   scale: [1, 1.2, 1],
   transition: {
@@ -41,7 +41,7 @@ export default function Hero() {
             <motion.div
               key={index}
               initial={{ opacity: 0, scale: 0 }}
-              animate={randomBlink}
+              animate={randomBlink()} // Call the function to get the animation object
               className="absolute text-primary/20"
               style={{ left, top }}
             >
@@ -91,4 +91,3 @@ export default function Hero() {
     </section>
   )
 }
-

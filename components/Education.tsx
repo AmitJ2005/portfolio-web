@@ -109,8 +109,19 @@ export default function Education() {
   )
 }
 
-function CertificateCard({ cert }) {
-  const [isOpen, setIsOpen] = useState(false)
+interface Certificate {
+  name: string;
+  issuer: string;
+  date: string;
+  imageUrl: string;
+}
+
+interface CertificateCardProps {
+  cert: Certificate;
+}
+
+function CertificateCard({ cert }: CertificateCardProps) {
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
@@ -145,6 +156,5 @@ function CertificateCard({ cert }) {
         </div>
       </DialogContent>
     </Dialog>
-  )
+  );
 }
-

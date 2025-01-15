@@ -1,19 +1,23 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+import React, { ReactNode } from 'react';
 
-import React from 'react';
+interface Props {
+  children: ReactNode;
+}
 
-interface Props {}
-interface State {}
+interface State {
+  hasError: boolean;
+}
 
 class ErrorBoundary extends React.Component<Props, State> {
-  state = { hasError: false };
+  state: State = { hasError: false };
 
-  static getDerivedStateFromError(error: Error) {
+  static getDerivedStateFromError(): State {
     return { hasError: true };
   }
 
-  componentDidCatch(error: Error, errorInfo: ErrorInfo) {
-    console.error("Uncaught error:", error, errorInfo);
+  componentDidCatch(_: Error, errorInfo: React.ErrorInfo) {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    console.error("Uncaught error:", errorInfo);
   }
 
   render() {
