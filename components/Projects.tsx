@@ -1,6 +1,5 @@
 "use client"
 
-import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Card3D } from '@/components/ui/3d-card'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"

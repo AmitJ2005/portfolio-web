@@ -10,38 +10,24 @@ interface State {
   hasError: boolean
 }
 
-class ErrorBoundary extends Component<Props, State> {
-  public state: State = {
-    hasError: false
+class ErrorBoundary extends Component {
+  state = { hasError: false };
+
+  static getDerivedStateFromError(error: Error) {
+    return { hasError: true };
   }
 
-  public static getDerivedStateFromError(_: Error): State {
-    return { hasError: true }
+  componentDidCatch(error: Error, errorInfo: ErrorInfo) {
+    console.error("Uncaught error:", error, errorInfo);
   }
 
-  public componentDidCatch(error: Error, errorInfo: ErrorInfo) {
-    console.error('Uncaught error:', error, errorInfo)
-  }
-
-  public render() {
+  render() {
     if (this.state.hasError) {
-      return (
-        <div className="flex min-h-screen items-center justify-center">
-          <div className="text-center">
-            <h2 className="text-2xl font-bold mb-4">Oops, something went wrong!</h2>
-            <button
-              className="bg-primary text-white px-4 py-2 rounded"
-              onClick={() => this.setState({ hasError: false })}
-            >
-              Try again
-            </button>
-          </div>
-        </div>
-      )
+      return <h1>Something went wrong.</h1>;
     }
 
-    return this.props.children
+    return this.props.children;
   }
 }
 
-export default ErrorBoundary 
+export default ErrorBoundary;
