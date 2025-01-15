@@ -28,31 +28,31 @@ export default function Education() {
       name: "AWS Certified Cloud Practitioner",
       issuer: "Amazon Web Services",
       date: "January 2023",
-      imageUrl: "https://example.com/aws-certificate.jpg" // Replace with actual image URL
+      imageUrl: "/images/skills/google analysis.png" // Replace with actual image URL
     },
     {
       name: "Google Data Analytics Professional Certificate",
       issuer: "Google",
       date: "March 2023",
-      imageUrl: "https://example.com/google-certificate.jpg" // Replace with actual image URL
+      imageUrl: "/images/skills/google analysis.png" // Replace with actual image URL
     },
     {
       name: "Microsoft Certified: Azure Data Fundamentals",
       issuer: "Microsoft",
       date: "May 2023",
-      imageUrl: "https://example.com/microsoft-certificate.jpg" // Replace with actual image URL
+      imageUrl: "/images/skills/google analysis.png" // Replace with actual image URL
     },
     {
       name: "IBM Data Science Professional Certificate",
       issuer: "IBM",
       date: "July 2023",
-      imageUrl: "https://example.com/ibm-certificate.jpg" // Replace with actual image URL
+      imageUrl: "/images/skills/google analysis.png" // Replace with actual image URL
     },
     {
       name: "Tableau Desktop Specialist",
       issuer: "Tableau",
       date: "September 2023",
-      imageUrl: "https://example.com/tableau-certificate.jpg" // Replace with actual image URL
+      imageUrl: "/images/skills/google analysis.png" // Replace with actual image URL
     }
   ]
 

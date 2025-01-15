@@ -11,8 +11,31 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: 'Amit Jaiswal - Data Analyst & Developer',
-  description: 'Professional portfolio of Amit Jaiswal, aspiring Data Analyst and Developer',
+  title: 'Amit Jaiswal - Portfolio',
+  description: 'Full Stack Developer Portfolio showcasing projects and skills',
+  keywords: ['Full Stack Developer', 'Web Development', 'React', 'Next.js', 'Portfolio'],
+  authors: [{ name: 'Amit Jaiswal' }],
+  openGraph: {
+    title: 'Amit Jaiswal - Portfolio',
+    description: 'Full Stack Developer Portfolio showcasing projects and skills',
+    url: 'https://your-domain.com',
+    siteName: 'Amit Jaiswal Portfolio',
+    images: [
+      {
+        url: 'https://your-domain.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Amit Jaiswal - Portfolio',
+    description: 'Full Stack Developer Portfolio showcasing projects and skills',
+    images: ['https://your-domain.com/og-image.jpg'],
+  },
 }
 
 export default function RootLayout({

@@ -3,11 +3,15 @@ const nextConfig = {
   output: 'export',
   images: {
     unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
+    ],
   },
-  // If you're using external images, add domains here
-  // images: {
-  //   domains: ['your-domain.com'],
-  // },
+  // Enable React Strict Mode for better development
+  reactStrictMode: true,
 }
 
-export default nextConfig 
+export default nextConfig
