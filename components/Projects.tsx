@@ -14,7 +14,7 @@ interface ProjectType {
   details: string[];
 }
 
-const projects = [
+const projects: ProjectType[] = [
   {
     title: "AutoTradeBot",
     subtitle: "Algo Trading Application",
@@ -30,13 +30,40 @@ const projects = [
   {
     title: "StockPro",
     subtitle: "Stock Analysis Application",
-    image: "/images/projects/fillter.png", // Updated path
+    image: "/images/projects/stockpro.png", // Updated path
     description: "Python, Django, React, TailwindCSS, Yahoo Finance",
     details: [
       "Built an analysis tool for Indian Stock Market using Django, React and Yahoo Finance to gather data.",
       "Fetched real-time stock data with Yahoo Finance and YFinance library.",
       "Added watchlist management, fuzzy search, and secure user authentication.",
       "Designed a responsive UI with React and TailwindCSS for better usability."
+    ]
+  },
+  {
+    title: "PanPaperTodo",
+    subtitle: "Personal Task Management Application",
+    image: "/images/projects/panpapertodo.png", // Updated path
+    description: "Django, SQLite, JavaScript, HTML/CSS",
+    details: [
+        "Built a comprehensive task management system with Django's authentication and ORM",
+        "Implemented complete CRUD operations for daily tasks and learning tracking",
+        "Created an intuitive dashboard with date navigation and task status management", 
+        "Designed responsive UI with custom CSS animations and modern design principles",
+        "Added features like daily learning logs, task completion tracking, and date filtering",
+        "Integrated user authentication with signup, login and session management",
+        "Built dynamic client-side interactions using JavaScript for better UX"
+    ]
+  },
+  {
+    title: "Market Pulse Analyzer",
+    subtitle: "Stock Analysis and Visualization",
+    image: "/images/projects/Market Pulse.png", // Updated path
+    description: "Flask, Pandas, YFinance, YahooQuery, Matplotlib",
+    details: [
+      "Developed a web application for analyzing and visualizing stock market data.",
+      "Implemented user authentication and stock search functionality.",
+      "Fetched stock data from Yahoo Finance API and displayed it using interactive charts.",
+      "Designed a responsive UI with custom CSS and integrated dark mode for better user experience."
     ]
   }
 ]

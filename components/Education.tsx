@@ -25,34 +25,40 @@ export default function Education() {
 
   const certifications = [
     {
-      name: "AWS Certified Cloud Practitioner",
+      name: "Building Generative AI Applications",
       issuer: "Amazon Web Services",
-      date: "January 2023",
-      imageUrl: "/images/skills/google analysis.png" // Replace with actual image URL
+      date: "July 2024",
+      imageUrl: "/images/skills/genai.png" // Replace with actual image URL
     },
     {
-      name: "Google Data Analytics Professional Certificate",
+      name: "Google Data Analytics Certificate",
       issuer: "Google",
-      date: "March 2023",
+      date: "Jan 2024",
       imageUrl: "/images/skills/google analysis.png" // Replace with actual image URL
     },
     {
-      name: "Microsoft Certified: Azure Data Fundamentals",
-      issuer: "Microsoft",
+      name: "Data Analysis using Excel",
+      issuer: "Great Learning",
       date: "May 2023",
-      imageUrl: "/images/skills/google analysis.png" // Replace with actual image URL
+      imageUrl: "/images/skills/dataanalysis.png" // Replace with actual image URL
     },
     {
-      name: "IBM Data Science Professional Certificate",
-      issuer: "IBM",
-      date: "July 2023",
-      imageUrl: "/images/skills/google analysis.png" // Replace with actual image URL
+      name: "Prompt Engineering",
+      issuer: "Amazon Web Services",
+      date: "July 2024",
+      imageUrl: "/images/skills/Prompt Engineering.png" // Replace with actual image URL
     },
     {
-      name: "Tableau Desktop Specialist",
-      issuer: "Tableau",
+      name: "Crash Course in Artificial Intelligence",
+      issuer: "Great Learning",
+      date: "December 2023",
+      imageUrl: "/images/skills/ai.png" // Replace with actual image URL
+    },
+    {
+      name: "Data Visualization With Power Bl",
+      issuer: "Great Learning",
       date: "September 2023",
-      imageUrl: "/images/skills/google analysis.png" // Replace with actual image URL
+      imageUrl: "/images/skills/powerbi.png" // Replace with actual image URL
     }
   ]
 
