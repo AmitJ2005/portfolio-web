@@ -25,6 +25,12 @@ export default function Education() {
 
   const certifications = [
     {
+      name: " Investor Certification Examination",
+      issuer: "SEBI",
+      date: "Jan 2025",
+      imageUrl: "/images/skills/SEBI.png" // Replace with actual image URL
+    },
+    {
       name: "Building Generative AI Applications",
       issuer: "Amazon Web Services",
       date: "July 2024",
